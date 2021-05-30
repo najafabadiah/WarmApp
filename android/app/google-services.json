@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "460817676084",
+    "firebase_url": "https://warmapp-da212-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "warmapp-da212",
+    "storage_bucket": "warmapp-da212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460817676084:android:e558f992b43756a7ee9761",
+        "android_client_info": {
+          "package_name": "uzh.ase.project.reactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460817676084-7uvt7iggo59klfjrmgcva58cstl417ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNHwwnQV1zMcSDMXlC0uRVWTbG-ACy48M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460817676084-7uvt7iggo59klfjrmgcva58cstl417ul.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460817676084-dakg4c287jvve7sn8r9qv2984611ebb6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "uzh.ase.project.reactnative"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
