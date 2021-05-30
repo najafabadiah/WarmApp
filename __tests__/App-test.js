@@ -2,38 +2,20 @@
  * A mock of the firebase node modules is required
  */
 
+ import "react-native";
  import React from "react";
- import { Button, Text, TextInput, View, StyleSheet } from "react-native";
+ import App from "../App";
  
- const App = () => {
-   const [message, setMessage] = React.useState();
+ import { fireEvent, render, waitFor } from "@testing-library/react-native";
  
-   return (
-     <View>
-       <Button
-         title="Say Hello"
-         onPress={() => {
-           setTimeout(() => {
-             setMessage("Hello Tester");
-           }, Math.floor(Math.random() * 200));
-         }}
-       />
-       {message && (
-         <Text style={styles.messageText} testID="printed-message">
-           {message}
-         </Text>
-       )}
-     </View>
-   );
- };
+ it("Renders Message", async () => {
+   const { getByTestId, getByText, queryByTestId, toJSON } = render(<App />);
  
- const styles = StyleSheet.create({
-   messageText: {
-     fontFamily: "Arial",
-     fontSize: 38,
-     textAlign: "center",
-     marginTop: 10
-   }
+   const button = getByText("Say Hello");
+   fireEvent.press(button);
+ 
+   await waitFor(() => expect(queryByTestId("printed-message")).toBeTruthy());
+ 
+   expect(getByTestId("printed-message").props.children).toBe("Hello Tester");
+   expect(toJSON()).toMatchSnapshot();
  });
- 
- export default App;
