@@ -4,7 +4,7 @@ Advanced Software Engineering Class
 
 Version: 1.0 
 
-Team: Amir Hossein - Pietro Bonazzi - Adam Herman - Faisal Alsayed 
+Team: Amir Hossein - Pietro Bonazzi - Faisal Alsayed 
 
 ------------------------------
 # Overview 
